@@ -1,13 +1,7 @@
 resource "aws_security_group" "main" {
   name        = "main"  
   description = "Allow SSH traffic"
-  # allow ingress ("in") traffic on port 22, the port SSH runs on
-  ingress {
-    from_port   = 22
-    to_port     = 22
-    protocol    = "tcp"
-    cidr_blocks = ["0.0.0.0/0"]
-  }
+  
   # allow all egress ("out") traffic out to the internet
   egress {
     from_port   = 0
