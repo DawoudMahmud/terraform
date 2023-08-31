@@ -65,7 +65,7 @@ resource "aws_route_table" "public" {
   }
 
   tags = {
-    Name = "example"
+    Name = "main"
   }
 }
 
